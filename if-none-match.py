@@ -39,3 +39,5 @@ class BurpExtender(IBurpExtender, IHttpListener):
                     new_header.append(header)
             new_request = self._helpers.buildHttpMessage(new_header, body)
             content.setRequest(new_request)
+
+            
